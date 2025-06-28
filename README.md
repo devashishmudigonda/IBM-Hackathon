@@ -89,6 +89,10 @@ Visit [http://localhost:5000](http://localhost:5000) in your browser.
 - Whisper model used: `base` (changeable to `small`, `medium`, etc.)  
 - Summaries are cumulative and based on entire transcript.  
 
+## 🖼️ Screenshot
+
+![Smart Meeting Summarizer Screenshot](screenshots/demo.png)
+
 ## 📌 Disclaimer
 
 This is a prototype. Do not expose your IBM API keys publicly. Ensure your use complies with IBM and OpenAI terms of service.
