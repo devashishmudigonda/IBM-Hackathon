@@ -1,0 +1,41 @@
+ Here's a summary of the meeting:
+
+1. Discussion on the current Flash KPI:
+   - The team agreed that the current Flash KPI is not comprehensive enough to cover all the required metrics.
+   - They decided to expand the KPI to include more detailed and relevant data points.
+
+2. Brainstorming session for new metrics:
+   - The team identified potential new metrics, such as user engagement, session duration, and conversion rates.
+   - They agreed to prioritize these metrics based on their business value and feasibility.
+
+3. Allocation of resources:
+   - The team decided to allocate additional resources, including hiring a data analyst and expanding the team's capacity for data processing.
+
+4. Timeline and milestones:
+   - The team proposed a new timeline with a first iteration of the summarizer expected in 6 months.
+   - They agreed to have regular progress updates and sprint reviews to ensure the project stays on track.
+
+Action Items:
+1. Responsible Person: Devashish (Back-end Team Lead)
+   - Action: Develop a comprehensive list of new metrics, including user engagement, session duration, and conversion rates.
+   - Deadline: Within 2 weeks from the meeting date.
+
+2. Responsible Person: [Team Member's Name] (Data Analyst)
+   - Action: Hire a data analyst by the end of the month.
+   - Deadline: End of the month.
+
+3. Responsible Person: [Team Member's Name] (Team Lead)
+   - Action: Expand team capacity for data processing by the end of the quarter.
+   - Deadline: End of the quarter.
+
+4. Responsible Person: [Team Member's Name] (Product Owner)
+   - Action: Prioritize new metrics based on business value and feasibility.
+   - Deadline: Within 1 month from the meeting date.
+
+5. Responsible Person: [Team Member's Name] (Data Engineer)
+   - Action: Ensure the new summarizer is integrated with the existing system and follows best practices for data processing.
+   - Deadline: Within 3 months from the meeting date.
+
+6. Responsible Person: [Team Member's Name] (QA Engineer)
+   - Action: Develop test cases and ensure the summarizer meets quality standards.
+   - Deadline: With

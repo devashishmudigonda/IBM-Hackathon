@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Meeting Summarizer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 30px;
+    }
+    textarea {
+      width: 90%;
+      height: 150px;
+      margin: 10px auto;
+      display: block;
+      font-family: monospace;
+      font-size: 14px;
+      padding: 10px;
+    }
+    button {
+      margin: 10px;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #status {
+      margin: 10px;
+      font-weight: bold;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Smart Meeting Summarizer</h1>
+
+  <input id="meet_url" type="text" placeholder="Paste GMeet URL here" style="width: 60%; padding: 10px;" />
+
+  <br>
+  <button onclick="startLive()">▶️ Start Live Summarization</button>
+  <button onclick="stopLive()">⏹ Stop</button>
+
+  <p id="status">Idle</p>
+
+  <h3>📝 Transcript</h3>
+  <textarea id="transcript" readonly>No transcript yet.</textarea>
+
+  <h3>🧾 Summary</h3>
+  <textarea id="summary" readonly>No summary yet.</textarea>
+
+  <script>
+    let intervalId = null;
+
+    function startLive() {
+      const url = document.getElementById("meet_url").value.trim();
+      if (!url.startsWith("http")) {
+        alert("Please enter a valid GMeet URL");
+        return;
+      }
+
+      fetch("/start_live", {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: url })
+      });
+
+      document.getElementById("status").innerText = "⏳ Recording and summarizing every 10s...";
+      
+      intervalId = setInterval(() => {
+        fetch("/get_updates")
+          .then(res => res.json())
+          .then(data => {
+            document.getElementById("transcript").value = data.transcript || "No transcript.";
+            document.getElementById("summary").value = data.summary || "No summary.";
+          });
+      }, 10000); // every 10 seconds
+    }
+
+    function stopLive() {
+      clearInterval(intervalId);
+      fetch("/stop_live");
+      document.getElementById("status").innerText = "⏹ Stopped.";
+    }
+  </script>
+</body>
+</html>

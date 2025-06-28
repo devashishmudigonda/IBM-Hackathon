@@ -1,0 +1,9 @@
+[09:00 AM] Sarah: Let's start with a quick status update. John, how's the backend integration?
+
+[09:01 AM] John: The APIs are complete. We'll deploy to QA by Thursday.
+
+[09:03 AM] Lisa: The dashboard UI is ready, but needs a fix in data formatting. I’ll work with John today.
+
+[09:06 AM] Raj: QA can begin on Friday once integration is done.
+
+[09:07 AM] Sarah: Client demo is next Wednesday. Build must be ready by Tuesday. Lisa & John: fix data by EOD. Raj: prep test cases. Everyone: update Jira by 6 PM.
