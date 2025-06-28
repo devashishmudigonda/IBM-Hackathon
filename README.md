@@ -91,7 +91,7 @@ Visit [http://localhost:5000](http://localhost:5000) in your browser.
 
 ## 🖼️ Screenshot
 
-![Smart Meeting Summarizer Screenshot](screenshots/demo.png)
+![Smart Meeting Summarizer Screenshot](screenshot.png)
 
 ## 📌 Disclaimer
 
